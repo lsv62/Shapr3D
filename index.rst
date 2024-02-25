@@ -10,7 +10,7 @@ Shapr3D's documentation!
 .. toctree::
    :numbered:
 
-   getting-started.rst
+   tools.rst
    basics.rst
    modeling.rst
    projects.rst
