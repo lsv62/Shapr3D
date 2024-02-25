@@ -1,6 +1,6 @@
 
-Modeling
-========
+Моделювання
+============
 
 Basic controls and access
 -------------------------
@@ -746,253 +746,316 @@ Mirror
         mirror any sketch, face, or body over a selected face, sketch profile, 
         axis, sketch line, or construction plane
 
-Tools Menu
-----------
+Меню інструментів
+----------------------
 
-Offset Face
+Зміщення грані
+~~~~~~~~~~~~~~~~~~
+
+.. glossary::
+
+    Інструмент "Зміщення грані" 
+        додає або зменшує товщину або змінює розмір таких елементів, як отвори,
+        подовжуючі або обрізаючи не обов'язково пласки грані
+
+    Змістити грань:
+        * виберіть грань або грані, які потрібно змістити
+        * зміщуйте перетягуючи стрілки
+
+    Зміщення грані проти видавлення
+        * при зміщенні сусідні грані подовжуються або обрізаються
+        * при видавленні створюється нова призматична форма 
+
+Фаска/скруглення
+~~~~~~~~~~~~~~~~~~
+
+.. glossary::
+
+    Інструмент "Фаска/скруглення"
+        додає грань під кутом або радіус скруглення на краях моделі
+
+    Створення фаски: 
+        * оберість інструмент Фаска/Скруглення
+        * виберіть тип фаски:
+            * Авто – створює фаску, утворюючи скіс під кутом 45°
+            * 2-дистанційна фаска – фаска, яка віддалена на різній відстані від вибраного краю
+        * виберіть ребро або ребра, які потрібно зробити фаскою
+        * перетягніть стрілки в напрямку до тіла, щоб динамічно змінити розмір фаски
+        * виберіть Готово
+
+    Створення скруглення: 
+        * оберість інструмент Фаска/Скруглення
+        * виберіть ребро або ребра, які потрібно скруглити
+        * перетягніть стрілки в напрямку від тіла, щоб динамічно змінити розмір скруглення
+        * виберіть Готово
+
+    Параметри кутового скруглення:
+        * круглий м'яч - кут має постійний радіус
+        * відступ - кута відсуває краї, де скруглення починають переходити в кут
+        * G1 - зберігає дотик між скругленням і суміжними гранями і має круглий профіль
+        * G2 - створює скруглення, яке відповідає кривизні суміжних граней і має некруглий профіль
+     
+    Слайдер профілю скруглення
+        змінює профіль поперечного перерізу скруглення в бік чоткішого чи плаского скруглення
+
+    Мітка розміру величини скруглення
+        визначає величину зміни профілю від абсолютно плоскої грані до гострого кута
+
+Екструзія
 ~~~~~~~~~~~
 
 .. glossary::
 
-    Offset face 
-        add or remove thickness, or modify the size of features such as holes.
-        Offset Face cannot be used to create a body from a closed sketch, 
-        while Extrude creates a 3D body from a 2D sketch by linearly extending a face on a body. 
+    Інстумент "Екструзія"
+        створює 3D-геометрію, штовхаючи або тягнучи грань або закритий ескіз у лінійному напрямку
 
-Chamfer/Fillet
-~~~~~~~~~~~~~~
+    Видавити тіло
+        * оберить Екструзія
+        * виберіть грані або профілі ескізу, які потрібно видавити
+        * перетягуйте лінійні стрілки, щоб динамічно переміщувати обличчя
+        * налаштуйте тип видавлення за допомогою значка поруч із міткою розміру
+        * перетягуйте вигнуті стрілки, щоб динамічно переміщати бічні грані
+        * виберіть Готово
 
-.. glossary::
+    Типи Екструзії:
+        * Нове тило - створює нове окреме тіло
+        * Об'єдання - геометрія буде додана до наявного тіла
+        * Від`єднання - геометрія буде видалена з існуючого тіла, утворюючи отвір або порожнечу
+        * Перетинання - результатом буде об’єм, де профіль перекриває існуючу геометрію тіла
 
-    Chamfer/Fillet
-        Adds an angled face or radius at the edges of your model.
-
-    Chamfer: 
-        Drag the arrows in toward the body (negative dimension value).
-
-    Fillet: 
-        Drag the arrows away from the body (positive dimension value).
-
-CREATING A CHAMFER
-""""""""""""""""""
-
-.. glossary::
-
-    Chamfer/Fillet/Auto
-        Creates an angled face that is setback equal distances from the selected edge.
-
-    Chamfer/Fillet/2-Distance Chamfer
-        set back at different distances from the selected edge.
-
-Fillet settings
-"""""""""""""""
-
-.. glossary::
-
-    Fillet/Rolling Ball
-        corner has a constant radius.
-
-    Fillet/Setback
-        blended face has a variable radius. 
-
-    Fillet/G1
-        maintain tangency between the fillet and adjacent faces
-
-    Fillet/G2
-        create a filet that matches the curvature of adjacent faces
-        
-Profile slider
-""""""""""""""
-
-.. glossary::
-
-    Chamfer/Fillet/profile slider
-        produce a sharper or e a flatter profile
-
-Extrude
-~~~~~~~
-
-.. glossary::
-
-    Extrude
-        Create 3D geometry by pushing or pulling a face or closed sketch in a linear direction.
-        Specify a draft angle, which adds a taper to the side faces of the geometry.
-
-UNDERSTANDING DEFAULT EXTRUDE TYPES
-"""""""""""""""""""""""""""""""""""
-
-.. glossary::
-
-    Extrude/New body   
-        Creates a new stand-alone body
-
-    Extrude/Union 
-        The extruded geometry will be added to an existing body. 
-
-    Extrude/Subtract 
-        The extruded geometry will be removed from an existing body, producing a hole or void.
-
-    Extrude/Intersect 
-        The result of the extrude will be the volume where the profile overlaps existing body geometry.
-
-Shell
-~~~~~
-
-.. glossary::
-
-    Shell 
-        convert solid geometry into a hollow shell with a defined wall thickness
-
-Loft
-~~~~
-
-.. glossary::
-
-    Loft 
-        interpolates the shape of the body between the cross-sections
-
-UNDERSTANDING LOFT ELEMENTS
-"""""""""""""""""""""""""""
-
-.. glossary::
-
-    Loft Profiles
-        body cross sections from the separate planes
-
-    Loft Connection points
-        points that can be dragged to modify making changes to connection points
-
-    Loft Guide curves
-        optional loft element that can be used to control the shape of the loft
-
-Union
-~~~~~
-
-.. glossary::
-
-    Union 
-        merge separate overlapping bodies into a single, united body
-
-Subtract
-~~~~~~~~
-
-.. glossary::
-
-    Subtract 
-        remove the volume of selected bodies from a target body or bodies. 
-        To use this tool, you must have at least two overlapping bodies.
-
-Intersect
-~~~~~~~~~
-
-.. glossary::
-
-    Intersect 
-        create a new body from the common volume of intersecting bodies. 
-        Bodies must be overlapping to be valid for this tool.
-
-Split Body
+Оболонка
 ~~~~~~~~~~
 
 .. glossary::
 
-    Split Body
-        cut apart 3D bodies with construction planes, grid planes, sketch profiles, faces, or images
+    Інстумент "Оболонка" 
+        перетворює суцільну геометрію в порожнисту оболонку з визначеною товщиною стінки
 
-Revolve
-~~~~~~~
+    Створити оболонку
+        * обрерить інструмент Оболонка
+        * виберіть грань або грані, які потрібно видалити
+        * перетягніть стрілки, щоб динамічно визначити товщину стінки
+        * виберіть Готово
 
-.. glossary::
-
-    Revolve 
-        create solid bodies that are symmetrical about an axis, 
-        also allows to generate shapes such as coils, springs, and threads.
-
-CREATING HELICAL BODIES
-"""""""""""""""""""""""
-
-Helical bodies are created by defining a height value within the Revolve tool. 
-
-Sweep
-~~~~~
+За перетином
+~~~~~~~~~~~~~~~
 
 .. glossary::
 
-    Sweep 
-        extrude a profile along a selected path for creating pipe systems, cables, 
-        wires, and other shapes with a uniform cross-section.
+    Інстумент "За перетином" 
+        формуэє тіло шляхом заповнення простору між двома гранями або ескізами
 
-Replace Face
+    Елементи інтрумента За перетином
+        * профілі перетину - щонайменше дві грані або ескізм, які представляють поперечні перерізи тіла
+        * кінцеві точки перетину - визначають шлях відображення одного профілю до наступного
+        * Напрямні криві - використовується для контролю форми перетину між профілями
+
+Об'єднання
+~~~~~~~~~~~~~~
+
+.. glossary::
+
+    Інстумент "Об'єднання" 
+        об’єднує окремі тіла, що перекриваються, в єдине об’єднане тіло
+
+    Об'єднати тіла
+        * виберіть інструмент Об'єднання
+        * виберіть тіла, які потрібно об’єднати
+        * налаштуйте параметр Зберігати оригінали
+        * виберіть Готово
+
+Віднімання
+~~~~~~~~~~~
+
+.. glossary::
+
+    Інструмент "Віднімання" 
+        видаляє об’єм принаймні з двох вибраних цільових тіл, що перекриваються
+
+    Видалити з тіла
+        * виберіть інструмент Відняти
+        * виберіть цільове тіло або тіла, з яких ви хочете видалити
+        * виберіть тіла, які потрібно відняти від цільового тіла
+        * налаштуйте параметр Зберігати оригінали:
+            * всі - оригінальні тіла все ще будуть доступні
+            * модифіковані тіла - оригінальні цільові тіла все ще будуть доступні
+            * видалені тіла - вихідні видалені тіла залишаться доступними
+            * ні – залишаються лише результати інструмента «Відняти»
+        * виберіть Готово
+
+Перетинання
 ~~~~~~~~~~~~
 
 .. glossary::
 
-    Replace Face
-        extend or trim a selected face to match another face for matching 
-        the faces of connected bodies. 
+    Інструмент "Перетинання" 
+        створює нове тіло із загального об’єму тіл, що перетинаються.
 
-Offset Edge (3D)
+    Створити перетинання
+        * виберіть інструмент Перетинання
+        * виберіть цільове тіло або тіла, які потрібно змінити
+        * виберіть тіло або тіла, що перетинаються
+        * налаштуйте параметр Зберігати оригінали
+        * виберіть Готово
+
+Розділити тіло
 ~~~~~~~~~~~~~~~~
 
 .. glossary::
 
-    Offest Edge
-        creates new sketch elements that are offset from existing elements by a specified distance.
+    Інструмент "Розділити тіло"
+        розрізає тривимірні тіла за допомогою будівельних площин, площин сітки, 
+        ескізних профілів, граней або зображень
 
-    Offest Edge/Loop 
-        Offsets a loop of edges from a 3D body. 
-
-    Offest Edge/Single 
-        Offsets a single edge from a 3D body.
+    Розділити тіло
+        * виберіть інструмент Розділити тіло
+        * виберіть тіла, які ви хочете розділити
+        * виберіть будівельну площину, площину сітки, профіль ескізу, грань або зображення
+        * налаштуйте параметр Зберігати оригінали
+        * виберіть Готово
         
-Project (3D)
+Обертання
+~~~~~~~~~~
+
+.. glossary::
+
+    Інструмнт "Обертання" 
+        створює тверді тіла, симетричні відносно осі, такі як котушки, пружини та різьба
+
+    Використати обертання
+        * створіть елементи, необхідні для обертання
+            * профіль половини поперечного перерізу тіла
+            * вісь, лінія або лінійний крайовий елемент у центрі обертання тіла
+        * виберіть Обертання
+        * виберіть профіль
+        * виберіть вісь
+        * відрегулюйте кут повороту перетягуючі дугові стрілки, щоб визначити кут
+        * відрегулюйте крок обертання, щоб створити гвинтову форму
+        * виберіть Готово
+
+По траєкторії
+~~~~~~~~~~~~~~~~~~
+
+.. glossary::
+
+    Інструмент "По траєкторії"
+        екструзія профілю по обраній траєкторії для створення систем труб, кабелів,
+        дротів та інші форми з однаковим поперечним перерізом
+
+    Використати По траєкторії
+        * Переконайтеся, що у вас є необхідні елементи
+            * ескіз профілю або грані, який ви створюватимете
+            * ескізи елементів або країв, за якими буде слідувати профіль
+        * виберіть інструмент По траєкторії
+        * виберіть профіль або профілі
+        * натисність Далі
+        * виберіть траєкторію
+        * виберіть Готово
+
+Заміна грані
+~~~~~~~~~~~~
+
+.. glossary::
+
+    Інструмент "Заміна грані"
+        розширити або обрізати вибрану грань у відповідності з іншою гранню сполучених тіл
+
+    Замінити грань
+        * вибреріть Заміну грані
+        * виберіть грань, яку необхідно розширити або обрізати
+        * виберіть грань, до якої треба приєднатись
+        * за необхідності виберіть До іншої сторони
+        * виберіть Готово
+        
+Зміщення ребра (3D)
+~~~~~~~~~~~~~~~~~~~~
+
+.. glossary::
+
+    Інструмент "Зміщення ребра (3D)"
+        створює нові елементи ескізу, які зміщені відносно існуючих елементів на задану відстань
+
+    Змістити ребро 3D тіла
+        * виберіть Зміщення ребра 
+        * виберіть тип зміщення:
+            * Петля - зміщує петлю ребер від тривимірного тіла
+            * Єдине - Зміщує єдине ребро від тривимірного тіла
+        * виберіть ребро, яке ви хочете змістити
+        * перетягніть стрілки в будь-якому напрямку, щоб змістити об’єкт
+        * виберіть Готово
+        
+Проекція (3D)
 ~~~~~~~~~~~~~~~~~
 
 .. glossary::
 
-    Project (3D)
-        project your sketches, edges, faces, and bodies to another face
+    Інструмент "Проекція (3D)"
+        проектує ескізи, ребра, грані та тіла на іншу грань
 
-Visualize
+    Спроектувати (3D)
+        * виберіть Проекцію (3D)
+        * виберіть тип проекції:
+            * Ребра – проекція створить нові ребра
+            * Ескізи – проекція створить нові ескізи
+        * виберіть елемент, який ви хочете спроектувати
+        * виберіть поверхню, на яку ви хочете проектувати
+        * виберіть Готово
+
+Візуалізація
+~~~~~~~~~~~~~
+
+.. glossary::
+
+    Інструмент Візуалізація
+        створює користувацькі реальний вигляд моделей
+
+Режими
+------
+
+Ізолювати
+~~~~~~~~~~~~
+
+.. glossary::
+
+    Інструмент «Ізолювати»
+        ізолює елемент моделі, щоб легко працювати над певними частинами чи
+        тілами, не відволікаючись.
+
+    Ізолювати елемент:
+        * Виберіть елемент або елементи, які потрібно ізолювати.
+        * З адаптивних режимів виберіть «Ізолювати», щоб увімкнути його
+
+Розріз
+~~~~~~~~~~~~
+
+.. glossary::
+
+    Інструмент "Розріз" 
+        показує внутрішні частини тривимірних тіл, щоб переглянути та 
+        змінити внутрішні частини вашої моделі
+
+    Створити Розріз:
+        * Виберіть площину
+        * виберіть "Розріз", щоб увімкнути перегляд розрізу
+
+Виміряти
 ~~~~~~~~~
 
 .. glossary::
 
-    Visualize
-        create custom, real-time renders of models
+    Переглянути вимірювання:
+        * виберіть «Виміряти», щоб відкрити спливаючу панель
+        * виберіть елементи моделі, які ви хочете виміряти
+ 
+    Закріпити вимірювання:
+        * виберіть значок шпильки біля вимірювання
+        * виберіть видалити біля закріпленого вимірювання
 
-Modes
------
-
-Isolate
-~~~~~~~
-
-Section View
-~~~~~~~~~~~~
-
-Measure
-~~~~~~~
-
-VIEW MEASUREMENTS
-"""""""""""""""""
-
-.. glossary::
-
-    Measure tool 
-        View the measurement of the selected items
-
-PIN MEASUREMENTS
-""""""""""""""""
-
-.. glossary::
-
-    Pinned Measurements
-        adds an annotation to your model to help you visualize or communicate the measurement better
-
-ADD POINT-TO-POINT MEASUREMENTS
-"""""""""""""""""""""""""""""""
-
-.. glossary::
-
-    Add Point-to-Point measurement
-        measure the distance between notable points
+    Додати вимірювання точка-точка:
+        * виберіть вимірювання між двома точками
+        * виберіть тип вимірювання:
+            * відстань від точки до точки
+            * 3-точковий кут
+        * виберіть поверхню, щоб знайти помічені точки
+        * виберіть помічені точки, які ви хочете виміряти
+        * виберіть Готово
