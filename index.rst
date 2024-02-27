@@ -10,11 +10,9 @@ Shapr3D's documentation!
 .. toctree::
    :numbered:
 
-   tools.rst
-   basics.rst
    modeling.rst
-   projects.rst
-   import-export.rst
+   transforms.rst
+   tools.rst
 
 Indices and tables
 ==================
