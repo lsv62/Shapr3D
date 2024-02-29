@@ -81,60 +81,49 @@
             * вкажіть потрібне значення кута на цифровій клавіатурі
             * виберіть Готово 
 
-Rotate Around Axis
+Обертання навколо осі
+~~~~~~~~~~~~~~~~~~~~~~
+
+.. glossary::
+
+    Обертання навколо осі
+        * обертання ескізів, профілів ескізів, ребер, граней або тіл навколо вибраної осі
+        * виконати обертання навколо осі:
+            * перейдіть до Обертання навколо осі
+            * виберіть ескізи, профілі ескізів, ребра, грані або тіла, які потрібно повернути
+            * виберіть Далі
+            * виберіть вісь, лінію або ребро, навколо яких ви хочете обертатися
+            * налаштуйте Копіювання
+            * перетягніть стрілку, щоб динамічно обертати
+            * виберіть Готово
+
+Вирівнювання
 ~~~~~~~~~~~~~~~~~~~
 
 .. glossary::
 
-    Rotate Around Axis
-        rotate sketches, sketch profiles, edges, faces, or bodies around a selected axis
-
-Align
-~~~~~~~~~~~~~~~~~~~
-
-.. glossary::
-
-    Align 
-        align 3D bodies
-
-MAKING SELECTIONS
-""""""""""""""""""""""
-
-.. glossary::
-
-    Selection for align tool 
-        * Planar faces
-        * Spherical faces
-        * Conical faces
-        * Sketches
-        * Construction planes
-        * Construction axes
-        * Circular edges and sketches
-        * Linear sketches and edges
-
-ADJUSTING ALIGNMENT
-""""""""""""""""""""
-
-.. glossary:: 
-
-    Manipulate a body's alignment
-        * Rotating around the gizmo center
-        * Moving linearly along the gizmo axes
-        * Moving on a plane
-        * Flipping 180 degrees
-
-    Snapping into alignment
-        * Aligned vertices
-        * Collinear edges
-        * Coplanar arcs
-        * Coplanar faces
-        * Parallel edges
+    Вирівнювання 
+        * вирівнює 3D тіла
+        * скористайтеся інструментом Вирівнювання:
+            * перейдіть до вирівнювання
+            * виберіть тіло або тіла, які потрібно вирівняти
+            * натисніть Далі
+            * виберіть грань або край серед тіл, які потрібно вирівняти
+            * виберіть ціль, з якою ви хочете вирівнятися
+            * налаштуйте вирівнювання за допомогою gizmo та значка Flip
+            * виберіть Готово
         
-Mirror
+Віддзеркалення
 ~~~~~~~~~~~~~~~~~~~
 
 .. glossary::
 
-    Mirror
-        mirror any sketch, face, or body over a selected face, sketch profile, 
-        axis, sketch line, or construction plane
+    Віддзеркалення
+        * віддзеркалює будь-який ескіз, грань або тіло відносно вибраної грані, профілю ескізу, 
+          осі, лінії ескізу або будівельній площини
+        * використовуйте інструмент «Дзеркало»:
+            * перейдіть до Відобразити
+            * виберіть елементи в дизайні, які ви хочете віддзеркалити
+            * виберіть базову площину, грань, профіль ескізу, вісь, лінію ескізу або будівельну площину
+            * налаштуйте Зберігати оригінали
+            * виберіть Готово
