@@ -11,6 +11,7 @@ Shapr3D's documentation!
    :numbered:
 
    modeling.rst
+   add.rst
    transforms.rst
    tools.rst
 
