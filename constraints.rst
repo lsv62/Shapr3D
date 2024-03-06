@@ -1,60 +1,46 @@
         
-Constraints Menu
+Меню обмежень
 =====================
 
-Constraints overview
---------------------
+Налаштування обмежень
+------------------------
 
 .. glossary::
 
-    Constraints 
-        add information to your sketches that control their behavior when they are modified
+    Налаштування обмежень
+        * автоматичне обмеження - включають горизонтальні/вертикальні, перпендикулярні, дотичні та з'єднані
+        * показувати обмеження - відображаються піктограми обмежень лише для вибраних елементів ескізу
+        * показувати розміри - відображаються усі заблоковані розміри для активного ескізу
 
-Constraint Settings
--------------------
-
-AUTO-CONSTRAINING
-~~~~~~~~~~~~~~~~~
-
-.. glossary::
-
-    Auto-constraining
-        include Horizontal/Vertical, Perpendicular, Tangent (when an arc is created at an endpoint),
-        and Coincident
-
-CONSTRAINT & LOCKED DIMENSION VISIBILITY
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-.. glossary::
-
-    Constraint & Locked Dimension Visibility
-        * Always Show Constraints
-        * Always Show Dimensions
-
-Adding and removing constraints
+Дадавання та вилучення обмежень
 -------------------------------
 
-ADDING CONSTRAINTS
-~~~~~~~~~~~~~~~~~~
+.. glossary::
+
+    Додати обмеження
+        * виберіть елемент/елементи ескізу
+        * виберіть тип обмеження
+
+    Видалити обмеження
+        * натисність на іконку Роз'єднати
+        * виберіть Роз'єднати в меню обежень
+        * виберіть Видалити в меню ліворуч
+
+Типи обмежень
+-------------------
 
 .. glossary::
 
-    Add constraints 
-        * The constraints menu
-        * keyboard shortcuts by shift and letter
-        * Drag and drop to connected point, coincident, midpoint
-        * lock
-
-    Schetch constraints
-        * Parallel - sets parallel relationship between sketch line elements
-        * Perpendicular - sets a right angle (90°) between elements
-        * Tangent -  create a tangent relationship between sketch elements
-        * Coincident - make sketch endpoints coincident with other elements
-        * Midpoint - connect an endpoint with the center of a line
-        * Concentric - create a concentric relationship between sketch arc elements
-        * Horizontal/Vertical - create a horizontal or vertical relationship between linear sketch elements
-        * Equal - creates an equal length for selected lines and an equal radius for selected arcs and circles
-        * Symmetry - lie on opposite sides of an axis of symmetry
-        * Disconnect - break the connection between connected points
-        * Lock/Unlock - fixes a selected sketch element in its current position
-        * Make construction -convert your sketch elements into construction geometry
+    Обмеження ескізів
+        * Паралельно - встановлює паралельне співвідношення між елементами лінії ескізу
+        * Перпендикулярно - задає прямий кут (90°) між елементами
+        * Дотична - створіть дотичну залежність між елементами ескізу
+        * Збіг - зробить кінцеві точки ескізу такими, що збігаються з іншими елементами
+        * Середня точка - з'єднує кінцеву точку з центром лінії
+        * Концентрично — створіть концентричні зв’язки між елементами дуги ескізу
+        * Горизонтально/Вертикально - створіть горизонтальний або вертикальний зв'язок між лініями  ескізу
+        * Рівність — створює однакову довжину для вибраних ліній і однаковий радіус для вибраних дуг і кіл
+        * Симетрія - розташує по різні боки від осі симетрії
+        * Роз'єднати - розірвати зв'язок між підключеними точками
+        * Заблокувати/Розблокувати - фіксує вибраний елемент ескізу в його поточному положенні
+        * Зробити допоміжним - перетворює елементи ескізу в допоміжну геометрію

@@ -10,7 +10,9 @@ Shapr3D's documentation!
 .. toctree::
    :numbered:
 
+   sketch.rst
    modeling.rst
+   constraints.rst
    add.rst
    transforms.rst
    tools.rst
