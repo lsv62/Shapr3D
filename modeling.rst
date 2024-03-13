@@ -2,107 +2,56 @@
 Моделювання
 ============
 
-Basic controls and access
--------------------------
+Основні елементи керування та доступу
+--------------------------------------
 
-Selecting geometry
+Вибір геометрії
 ~~~~~~~~~~~~~~~~~~
 
-Basic selection
+Базовий вибір
 """""""""""""""
 
 .. glossary::
 
-    Select a face, sketch, or edge
-        Click/Tap once
+    Базовий вибір
+        * виберіть грань, ескіз або край - клікніть один раз
+        * виберіть ціле тіло або з’єднані елементи ескізу – двічі клікніть
+        * виберіть кілька елементів, один за іншим - натисніть Shift і клікніть кожен елемент
+        * вибрати все - Ctrl-A
+        * скасувати вибір усіх - клікніть порожню область або Esc
 
-    Select an entire body or connected sketch elements
-            Double-click/tap
-
-    Select multiple items, one by one 
-        Press the Shift key and click each item/Tap without interruption
-
-    Select all
-        Ctrl-A/Long tap and drag
-        
-    Deselect all
-        Click/Tap an empty area or Esc
-        
-
-Area Selection
+Вибір області
 """"""""""""""
 
 .. glossary::
 
-    Area Selection Left to right
-        Select elements that are completely within the selection box
-        
-    Area Selection Right to left
-        Select all elements that the selection box touches
-        
-    Filter the Selection
-        Use Tab to cycle through the selection filters
+    Вибір області
+        * виділення області зліва направо - вибір елементів, які повністю знаходяться в полі виділення
+        * виділення області справа наліво - вибір усіх елементів, яких торкається поле виділення
+        * відфільтрувати виділення - використовуйте Tab для циклічного переходу між фільтрами вибору
 
-Notable Points
-~~~~~~~~~~~~~~
+Точки прив'язки
+~~~~~~~~~~~~~~~~~
 
 .. glossary::
 
-    Endpoints
-        in linear, arc, and spline-based sketch elements or edges of bodies. 
+    Точки прив'язки
+        * кінцеві точки - в лінійних, дугових і сплайнових ескізних елементах або ребрах тіл
+        * середини - середина між двома кінцями відрізка
+        * центрові точки - в центрі дуг і кругових ребер, а також плоских прямокутних граней
+        * точки перетину - в яких зустрічаються або перетинаються дві лінії
 
-    Midpoints
-        middle point between two endpoints of a line segment. 
-
-    Center points
-        at the center of arc and circular edges, and planar rectangular faces. 
-
-    Intersection points
-        at which two lines meet or intersect. 
-
-Accessing tools
-~~~~~~~~~~~~~~~
+Використання gizmo
+~~~~~~~~~~~~~~~~~~~~~~
 
 .. glossary::
 
-    Accessing tools
-        * Menus 
-        * Project Sidebar
-        * Adaptive user interface
-        * Modes 
-        * Items Manager 
-        * Keyboard shortcuts
-        * Command Search 
-        * Context menus
-        * Menu Bars
-
-Using the gizmo
-~~~~~~~~~~~~~~~
-
-GIZMO CENTER
-""""""""""""
-
-.. glossary::
-
-    gizmo center functions:
-        * defines the center of any rotational movement
-        * controls the orientation of the gizmo
-
-ARROWS
-""""""""
-
-.. glossary::
-
-    Gizmo arrows
-        provide linear and rotational controls
-
-TILES
-""""""""
-
-.. glossary::
-
-    Gizmo tiles
-        dragged for linear movements along a plane
+    Використання gizmo
+        * центр gizmo:
+            * визначає центр будь-якого обертального руху
+            * контролює орієнтацію gizmo
+        * стрілки gizmo - забезпечують лінійне та поворотне управління
+        * плитки gizmo - перетягуються для лінійних переміщень уздовж площини
 
 Sketch Controls
 ---------------
