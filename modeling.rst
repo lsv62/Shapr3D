@@ -53,69 +53,54 @@
         * стрілки gizmo - забезпечують лінійне та поворотне управління
         * плитки gizmo - перетягуються для лінійних переміщень уздовж площини
 
-Sketch Controls
----------------
-
-States of sketch points
-~~~~~~~~~~~~~~~~~~~~~~~
+Елементи керування ескізом
+-------------------------------
 
 .. glossary::
 
-    Sketch points states of constraints
-        * Unconnected - points are free to move in any way within the sketch
-        * Connected to another sketch point - points will move together when modified
-        * Connected to a line or curve - can move along the line or curve or along a projection 
-          of the line or curve
-        * Connected to the center of a line - remain at the line's center if the line's length 
-          or position is modified
-        * Locked - fixed and cannot be moved
+    Стани точок ескізу
+        * Без зв’язку – точки можуть вільно переміщуватися у межах ескізу
+        * З’єднані:
+            * з іншою точкою ескізу – під час змінення точки рухатимуться разом
+            * з лінією або кривою – може рухатися вздовж лінії, кривої або вздовж проекції
+              лінії або кривої
+            * з центром лінії – залишайтеся в центрі лінії, якщо довжина лінії
+              або позиція змінена
+        * Заблоковані - зафіксовані і не можуть бути переміщеними
 
-Sketch pattern constraint
-~~~~~~~~~~~~~~~~~~~~~~~~~
+    Обмеження шаблону ескізу
+        * автоматично створюється за допомогою інструмента Шаблон для елементів ескізу або профілів ескізу
+        * змінити визначення шаблона та кількість:
+            * виберіть будь-який ескіз, що належить до шаблону ескізу, щоб повторно активувати 
+              значки керування шаблоном
+            * використовуйте значки керування шаблоном, щоб налаштувати тип визначення шаблона, 
+              відстань і кількість
+            * виділіть порожню область сітки або виберіть «Вийти з ескізу»
+        * видалити обмеження шаблону ескізу:
+            * у режимі ескізу знайдіть вихідний ескіз, на основі якого ви створили шаблон
+            * виберіть значок обмеження шаблону ескізу на вихідному ескізі
+            * у меню «Ескіз» виберіть «Видалити обмеження»
+            * змінюйте окремі елементи шаблона
 
-.. glossary::
+    Редагування ескізних розмірів
+        * редагувати розмір:
+            * клікніть елемент, щоб вибрати його
+            * наведіть курсор на позначку розміру
+            * за допомогою клавіатури введіть значення нового розміру
 
-    Sketch pattern
-        created using the Pattern tool for sketch elements or sketch profiles
+    Визначення ескізної площини
+        * виберіть площину перед початком ескізу
+        * вибрати плоску грань або будівельну площину
+        * виберіть із куба Orientation
+        * виберіть із Переглядів у Переглядах і Зовнішньому вигляді
+        * почати малювати на іншій площині:
+            * перетягніть вказівник, щоб навести курсор на плоску грань або будівельну площину
+            * натисніть пробіл
 
-Editing sketch dimensions
-~~~~~~~~~~~~~~~~~~~~~~~~~
-
-DIMENSION TYPES
-"""""""""""""""
-
-.. glossary::
-
-    Length/Absolute 
-        Distance between the two endpoints of a line
-
-    Length/Horizontal 
-        Distance between the two line endpoints relative to the horizontal axis
-
-    Length/Vertical 
-        Distance between two line endpoints relative to the vertical axis
-
-Defining your sketch plane
-~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-Define a sketch plane:
-
-* By selecting a plane before you start sketching
-* By selecting a planar face or construction plane
-* From the Orientation cube 
-* From Views in Views and Appearance
-
-To select a sketch tool right away press the Space bar after selecting a sketch tool and
-draging your pointer to hover over the rectangle corresponding to the plane you’d like to sketch.
-
-Changing a sketch plane
-~~~~~~~~~~~~~~~~~~~~~~~
-
-Move your sketch along the planes:
-
-* Double-click/tap the Orientation Cube to set the view to default.
-* Select Move/Rotate.
-* Drag the tiles in the gizmo center to move your sketch along the planes.
+    Переміщення ескізу по площинах
+        * двічі клацніть/торкніться куба орієнтації, щоб установити вигляд за замовчуванням
+        * виберіть Перемістити/Обернути
+        * перетягніть плитки в центрі gizmo, щоб перемістити ескіз уздовж площин
 
 Project spaces
 -------------------
